@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> Shërbime Elektrike</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand d-flex align-items-center" href="home.html">
+  <img src="/images/logo el.jpg" alt="Logo" width="40" height="40" class="me-2">
+    Shërbime Elektrike</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto"> 
+        <li class="nav-item"><a href="home.html" class="nav-link ">Kreu</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">Rreth Nesh</a></li>
+        <li class="nav-item"><a href="service.html" class="nav-link">Shërbimet</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link">Projektet</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link active">Kontakt</a></li>
+        <div class="language-switch d-flex gap-2">
+    </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Carousel-->
+<div id="carouselExample" class="carousel slide hero-section" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="carousel-background" style="background-image: url('/images/photo12.jpg');">
+        <div class="carousel-caption">
+          <h1>Shërbime Profesionale Elektrike – Cilësi, Siguri dhe Besueshmëri</h1>
+          <a href="tel:+355684305358" class="btn">Na kontaktoni</a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-background" style="background-image: url('/images/photo5.jpg');">
+        <div class="carousel-caption">
+          <h1>Zgjidhje të Sigurta për Instalime Elektrike</h1>
+          <a href="tel:+355684305358" class="btn">Na kontaktoni</a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-background" style="background-image: url('/images/photo9.jpg');">
+        <div class="carousel-caption">
+          <h1>Eksperiencë dhe Profesionalizëm në Çdo Projekt</h1>
+          <a href="tel:+355684305358" class="btn">Na kontaktoni</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="contact-section mt-5 ">
+  <div class="contact-image"></div>
+  <div style="flex: 1;">
+    <div class="contact-text">
+      <h2>NA KONTAKTONI</h2>
+      <p>Për të gjitha pyetjet tuaja, ju lutem mos ngurroni të na kontaktoni.</p>
+    </div>
+    <div class="follow-box">
+      <h4>NA NDIQNI</h4>
+      <div class="social-link">
+        <i class="bi bi-facebook"></i> Facebook
+      </div>
+      <div class="social-link">
+        <i class="bi bi-instagram"></i> Instagram
+      </div>
+      <div class="social-link">
+        <i class="bi bi-whatsapp"></i> Whatsapp
+      </div>
+    </div>
+  </div>
+</div>
+<div class="contact-container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d187.25397889835506!2d19.784749000000005!3d41.329229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135031c495fe1ce3%3A0x2a7bb409adeef33b!2sFatlind%20Elektricist!5e0!3m2!1sen!2sus!4v1754336247102!5m2!1sen!2sus" 
+  width="600" height="450" style="border:0;" 
+  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div class="form-container">
+    <h2><strong>PYETJE</strong></h2>
+    <p>Për çdo pyetje dhe kërkesë tuajën, ju lutem kontaktoni në numrin apo email-in tonë, ose plotësoni formularin e mëposhtëm.</p>
+    <div class="contact-info d-flex align-items-center mb-3">
+      <i class="bi bi-telephone-fill"></i><span>+355 68 430 5358</span>
+      <i class="bi bi-telephone-fill"></i><span>+355 68 886 7664</span>
+    </div>
+    <form id="contactForm">
+      <input type="text" placeholder="Emri" name="name" required>
+      <input type="tel" placeholder="Telefon" name="phone" required>
+      <input type="email" placeholder="Email" name="email" required>
+      <textarea placeholder="Mesazhi" name="message" required></textarea>
+      <button type="submit">Dërgo →</button>
+    </form>
+  </div>
+</div>
+<!--Footer-->
+<footer class="bg-black text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase text-warning">Adresa jonë</h5>
+        <p>Tiranë Albania</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase text-warning">Kontakt</h5>
+        <ul class="list-unstyled p-2">
+          <li><a href="tel:+355684305358"><i class="bi bi-telephone-fill p-2"></i> +355 68 430 5358</a></li>
+          <li><a href="tel:+355688867664"><i class="bi bi-telephone-fill p-2"></i> +355 68 886 7664</a></li>
+          <li><a href="https://wa.me/+355684305358" target="_blank" class="p-2">📩Na shkruani ne WhatsApp</a></li>
+          <li><a href="https://wa.me/+355688867664" target="_blank" class="p-2">📩Na shkruani ne WhatsApp</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase text-warning">Email & Rrjete Sociale</h5>
+        <ul class="list-unstyled fs-4">
+         <a href="https://instagram.com" class="text-light me-3 "><i class="bi bi-instagram"></i></a>
+        <a href="https://facebook.com" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+        <a href="mailto:info@sherbimeelektrike.al" class="text-light"><i class="bi bi-envelope-fill"></i></a>
+        </ul>
+      </div>
+    </div>
+    <hr class="bg-secondary" />
+    <div class="text-center">
+      <p class="mb-0">&copy; 2025 Shërbime Elektrike</p>
+      <p class="p-2">
+      </p>
+    </div>
+  </div>
+</footer>
+    <script src="/js/main.js"></script>
+</body>
+</html>
